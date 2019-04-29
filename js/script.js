@@ -35,7 +35,7 @@ $(document).ready(function () {
   var jsLibraries = $("input[name='js-libs']");
   var node = $("input[name='node']");
 
-  // acticities cost
+  // activities cost
   var totalCost = 0;
   $('.activities').append('<div id="total"></div>');
 
@@ -120,11 +120,11 @@ $(document).ready(function () {
 
 
 
-  // redit card
+  // credit card
   $('#payment').val('credit card');
   // Hide paypal and bitcoin
   $('#paypal, #bitcoin').hide();
-  // disable
+  // disables
   $('option[value="select_method"]').prop("disabled", true);
 
   $('#payment').change(function(){
@@ -133,7 +133,7 @@ $(document).ready(function () {
   		$('#paypal').show();
   	} else if ($('#payment option:selected').val() === "bitcoin") {
           $('#credit-card, #paypal').hide();
-  		$('#bitcoin').show();
+          $('#bitcoin').show();
   	} else {
   		$('#credit-card').show();
           $('#paypal, #bitcoin').hide();
